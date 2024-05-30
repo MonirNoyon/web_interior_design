@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interior Design Showcase</title>
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <div class="container">
+        <nav class="sidebar">
+            <h2>The Company</h2>
+            <ul>
+                <li><a href="#">Home Page</a></li>
+                <li><a href="#">Showcase</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">Designers</a></li>
+                <li><a href="#">Packages</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+        <main class="content">
+            <h1>Interior Design</h1>
+            <h2 class="highlight">Showcase.</h2>
+            <div class="gallery">
+                <div class="gallery-item">
+                    <img src="images/showcase-01.jpg" alt="Design 1">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/showcase-02.jpg" alt="Design 2">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/showcase-03.jpg" alt="Design 3">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/showcase-04.jpg" alt="Design 4">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/showcase-05.jpg" alt="Design 5">
+                </div>
+                <div class="gallery-item">
+                    <img src="images/showcase-06.jpg" alt="Design 6">
+                </div>
+            </div>
+            <section class="services">
+                <h2 class="highlight">Services.</h2>
+                <p>We are an interior design service that focuses on what’s best for your home and what’s best for you!</p>
+                <p>Some text about our services - what we do and what we offer. We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </section>
+            <section class="designers">
+                <h2 class="highlight">Designers.</h2>
+                <p>The best team in the world.</p>
+                <p>We are lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+            </section>
+            <h3>Our designers are thoughtfully chosen.</h3>
+            <section class="team">
+                <div class="team-member">
+                    <img src="images/person-01.jpg" alt="John Doe">
+                    <div class="info">
+                        <h2>John Doe</h2>
+                        <p class="role">CEO & Founder</p>
+                        <p class="description">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="images/person-02.jpg" alt="Jane Doe">
+                    <div class="info">
+                        <h2>Jane Doe</h2>
+                        <p class="role">Designer</p>
+                        <p class="description">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    </div>
+                </div>
+                <div class="team-member">
+                    <img src="images/person-03.jpg" alt="Mike Ross">
+                    <div class="info">
+                        <h2>Mike Ross</h2>
+                        <p class="role">Architect</p>
+                        <p class="description">Phasellus eget enim eu lectus faucibus vestibulum. Suspendisse sodales pellentesque elementum.</p>
+                    </div>
+                </div>
+            </section>
+            
+            <section class="packages">
+                <h2 class="highlight">Packages.</h2>
+                <p>Some text about our prices. Lorem ipsum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure...</p>
+                <div class="package-container">
+                    <div class="package basic">
+                        <h2>Basic</h2>
+                        <ul>
+                            <li>Floorplanning</li>
+                            <li>10 hours support</li>
+                            <li>Photography</li>
+                            <li>20% furniture discount</li>
+                            <li>Good deals</li>
+                        </ul>
+                        <div class="price-controls">
+                            <button class="button1" id="basic-decrease" onclick="decreaseBasicPrice('basic-price','basic-room-id')">-</button>
+                            <span class="price"> $<span id="basic-price">199</span> </span>
+                            <button class="button1" id="basic-increase" onclick="increaseBasicPrice('basic-price','basic-room-id')">+</button>
+                        </div>
+                        <p class="room" id="basic-room-id">1 room</p>
+                        <button onclick="basicSignup('basic-plan-choose')">Sign Up</button>
+                        <p class="footer" id="basic-plan-choose"></p>
+                    </div>
+                    <div class="package pro">
+                        <h2>Pro</h2>
+                        <ul>
+                            <li>Floorplanning</li>
+                            <li>50 hours support</li>
+                            <li>Photography</li>
+                            <li>50% furniture discount</li>
+                            <li>GREAT deals</li>
+                        </ul>
+                        <div class="price-controls">
+                            <button class="button1" id="pro-decrease" onclick="decreaseProPrice('pro-price','pro-room-id')">-</button>
+                            <span class="price"> $<span id="pro-price">249</span> </span>
+                            <button class="button1" id="pro-increase" onclick="increaseProPrice('pro-price','pro-room-id')">+</button>
+                        </div>
+                        <p class="room" id="pro-room-id">1 room</p>
+                        <button onclick="proSignup('pro-plan-choose')">Sign Up</button>
+                        <p class="footer" id="pro-plan-choose"></p>
+                    </div>
+                </div>
+            </section>
+            <section class="contact">
+                <h2 class="highlight">Contact.</h2> 
+                <p>Do you want us to style your home? Fill out the form and fill me in with the details :) we love meeting new people!</p>
+                <div class="contact-form">
+                    <form action="#" method="post">
+                        <div class="mt-2">
+                            <label for="">Name</label>
+                            <input type="text" name="name" required>
+                        </div>
+                      <div class="mt-2">
+                        <label for="">Email</label>
+                        <input type="email" name="email"  required>
+                      </div> 
+                        <div class="mt-2">
+                            <label for="">Message</label>
+                            <input name="message" required></input>
+                        </div>
+                        <button type="submit">Send Message</button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
